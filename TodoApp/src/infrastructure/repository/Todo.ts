@@ -1,6 +1,8 @@
 import { Todo } from "@domain/Todo"
 import { ITodoRepository } from "@app/repository/ITodoRepository"
+import { injectable } from "inversify"
 
+@injectable()
 export class TodoRepository implements ITodoRepository {
   async findMany(): Promise<Todo[]> {
     return [
