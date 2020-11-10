@@ -1,9 +1,7 @@
-import { IUserDto } from "./IUserDto";
-import { ISigninUseCase } from "./ISigninUseCase";
-
+import { IUserDto } from "../dto/IUserDto";
 import { ISigninUseCase } from "./ISigninUseCase";
 import { IUserRepository } from "../repository/IUserRepository";
-import User from "../../domain/User.entity";
+import User from "../../domain/entity/User";
 
 class SigninUseCase implements ISigninUseCase {
   constructor(private userRepository: IUserRepository) {}

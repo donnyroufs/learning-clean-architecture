@@ -1,4 +1,4 @@
-import { Types } from "./constants/types";
+import { Types } from "../constants/types";
 import { IUserRepository } from "./application/repository/IUserRepository";
 import "reflect-metadata";
 
