@@ -1,8 +1,8 @@
 import { ITodoRepository } from "@app/repository/ITodoRepository"
-import { Todo } from "@domain/Todo"
-import { IGetTodos } from "@app/usecase/todo/IGetTodos"
+import { Todo } from "../../../domain/Todo"
+import { IListTodosUseCase } from "@app/usecase/todo/IListTodosUseCase"
 
-export class GetTodos implements IGetTodos {
+export class ListTodosUseCase implements IListTodosUseCase {
   constructor(private readonly todoRepository: ITodoRepository) {}
 
   async fetch(): Promise<Todo[]> {

@@ -1,5 +1,5 @@
 import { Todo } from "@domain/Todo"
 
-export interface IGetTodos {
+export interface IListTodosUseCase {
   fetch(): Promise<Todo[]>
 }

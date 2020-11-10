@@ -1,4 +1,4 @@
-import { GetTodos } from "./../../application/usecase/todo/GetTodos"
+import { ListTodosUseCase } from "./../../application/usecase/todo/ListTodosUseCase"
 import { inject, injectable } from "inversify"
 import { ITodoRepository } from "@app/repository/ITodoRepository"
 import { Types } from "../types"
@@ -9,7 +9,7 @@ export class TodoServiceLocator {
     @inject(Types.ITodoRepository) private repository: ITodoRepository
   ) {}
 
-  public execGetTodosUseCase() {
-    return new GetTodos(this.repository)
+  public getListTodosUseCase() {
+    return new ListTodosUseCase(this.repository)
   }
 }

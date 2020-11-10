@@ -3,7 +3,7 @@ import "reflect-metadata"
 
 import express from "express"
 
-import { TodoRepository } from "./infrastructure/repository/Todo"
+import { TodoRepository } from "./infrastructure/repository/TodoRepository"
 import { ITodoRepository } from "./application/repository/ITodoRepository"
 import { TodoServiceLocator } from "./configuration/usecase/TodoServiceLocator"
 import { Types } from "./configuration/types"
@@ -11,7 +11,7 @@ import { Types } from "./configuration/types"
 import { InversifyExpressServer } from "inversify-express-utils"
 import { Container } from "inversify"
 
-import "./entrypoint/controllers/Todo"
+import "./entrypoint/controller/TodoController"
 
 const PORT = process.env.PORT
 
