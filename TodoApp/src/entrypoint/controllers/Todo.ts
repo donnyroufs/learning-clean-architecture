@@ -1,4 +1,4 @@
-import { TodoServiceLocator } from "./../../configuration/controller/TodoServiceLocator"
+import { TodoServiceLocator } from "./../../configuration/usecase/TodoServiceLocator"
 import { Types } from "../../configuration/types"
 import { IGetTodos } from "@app/usecase/todo/IGetTodos"
 import { inject } from "inversify"

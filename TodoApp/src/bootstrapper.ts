@@ -5,7 +5,7 @@ import express from "express"
 
 import { TodoRepository } from "./infrastructure/repository/Todo"
 import { ITodoRepository } from "./application/repository/ITodoRepository"
-import { TodoServiceLocator } from "./configuration/controller/TodoServiceLocator"
+import { TodoServiceLocator } from "./configuration/usecase/TodoServiceLocator"
 import { Types } from "./configuration/types"
 
 import { InversifyExpressServer } from "inversify-express-utils"
